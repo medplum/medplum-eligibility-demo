@@ -1,20 +1,20 @@
 
-> medplum-eligibility-demo@4.3.15 build
+> medplum-eligibility-demo@4.4.0 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@4.3.15 build:bots
+> medplum-eligibility-demo@4.4.0 build:bots
 > npm run clean && npm run lint && tsc --project tsconfig-bots.json && node --loader ts-node/esm src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@4.3.15 clean
+> medplum-eligibility-demo@4.4.0 clean
 > rimraf dist
 
 
-> medplum-eligibility-demo@4.3.15 lint
+> medplum-eligibility-demo@4.4.0 lint
 > eslint src/
 
-(node:8060) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:4253) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
 [36mvite v7.1.7 [32mbuilding for production...[36m[39m
@@ -23,11 +23,11 @@ transforming...
 rendering chunks...
 computing gzip size...
 [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.54 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
-[2mdist/[22m[2massets/[22m[35mindex-CCNKsf8-.css  [39m[1m[2m217.90 kB[22m[1m[22m[2m │ gzip:  32.17 kB[22m
-[2mdist/[22m[2massets/[22m[36mindex-CgmoMvRc.js   [39m[1m[33m964.44 kB[39m[22m[2m │ gzip: 289.56 kB[22m
 [33m
+[2mdist/[22m[2massets/[22m[35mindex-CCNKsf8-.css  [39m[1m[2m217.90 kB[22m[1m[22m[2m │ gzip:  32.17 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-DdWEpm-o.js   [39m[1m[33m964.44 kB[39m[22m[2m │ gzip: 289.56 kB[22m
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[32m✓ built in 49.82s[39m
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 55.57s[39m
