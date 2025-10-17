@@ -1,17 +1,17 @@
 
-> medplum-eligibility-demo@4.4.3 build
+> medplum-eligibility-demo@4.5.0 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@4.4.3 build:bots
+> medplum-eligibility-demo@4.5.0 build:bots
 > npm run clean && npm run lint && tsc --project tsconfig-bots.json && node --loader ts-node/esm src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@4.4.3 clean
+> medplum-eligibility-demo@4.5.0 clean
 > rimraf dist
 
 
-> medplum-eligibility-demo@4.4.3 lint
+> medplum-eligibility-demo@4.5.0 lint
 > eslint src/
 
 
@@ -35,7 +35,7 @@ Calling setState synchronously within an effect body causes cascading renders th
 
 ✖ 1 problem (0 errors, 1 warning)
 
-(node:4185) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:4658) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
 [36mvite v7.1.9 [32mbuilding for production...[36m[39m
@@ -43,12 +43,12 @@ transforming...
 [32m✓[39m 6777 modules transformed.
 rendering chunks...
 computing gzip size...
-[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.54 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
-[2mdist/[22m[2massets/[22m[35mindex-CCNKsf8-.css  [39m[1m[2m217.90 kB[22m[1m[22m[2m │ gzip:  32.17 kB[22m
-[2mdist/[22m[2massets/[22m[36mindex-zpzpsPUb.js   [39m[1m[33m972.45 kB[39m[22m[2m │ gzip: 291.83 kB[22m
 [33m
 (!) Some chunks are larger than 500 kB after minification. Consider:
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.54 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-CCNKsf8-.css  [39m[1m[2m217.90 kB[22m[1m[22m[2m │ gzip:  32.17 kB[22m
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[2mdist/[22m[2massets/[22m[36mindex-BTxAfeUQ.js   [39m[1m[33m972.48 kB[39m[22m[2m │ gzip: 291.84 kB[22m
+[32m✓ built in 33.05s[39m
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 50.76s[39m
