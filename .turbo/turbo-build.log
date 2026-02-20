@@ -1,13 +1,13 @@
 
-> medplum-eligibility-demo@5.0.14 build
+> medplum-eligibility-demo@5.0.15 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@5.0.14 build:bots
+> medplum-eligibility-demo@5.0.15 build:bots
 > npm run clean && tsc && node --no-warnings esbuild-script.mjs && tsx src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@5.0.14 clean
+> medplum-eligibility-demo@5.0.15 clean
 > rimraf dist data/example/example-bots.json
 
 Build completed successfully!
@@ -16,12 +16,12 @@ transforming...
 [32m✓[39m 6823 modules transformed.
 rendering chunks...
 computing gzip size...
-[2mdist/[22m[32mindex.html                 [39m[1m[2m    0.54 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m
-[2mdist/[22m[2massets/[22m[35mindex-B2LrRtjI.css  [39m[1m[2m  225.47 kB[22m[1m[22m[2m │ gzip:  33.37 kB[22m
-[2mdist/[22m[2massets/[22m[36mindex-BkkKytep.js   [39m[1m[33m1,007.72 kB[39m[22m[2m │ gzip: 301.72 kB[22m
+[2mdist/[22m[32mindex.html                 [39m[1m[2m    0.54 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-e1316GiF.css  [39m[1m[2m  229.79 kB[22m[1m[22m[2m │ gzip:  33.87 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-DcgmX0Zn.js   [39m[1m[33m1,015.06 kB[39m[22m[2m │ gzip: 303.79 kB[22m
+[32m✓ built in 13.38s[39m
 [33m
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 39.43s[39m
