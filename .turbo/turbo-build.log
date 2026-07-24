@@ -1,31 +1,27 @@
 
-> medplum-eligibility-demo@5.1.26 build
+> medplum-eligibility-demo@5.1.27 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@5.1.26 build:bots
+> medplum-eligibility-demo@5.1.27 build:bots
 > npm run clean && tsc && node --no-warnings esbuild-script.mjs && tsx src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@5.1.26 clean
+> medplum-eligibility-demo@5.1.27 clean
 > rimraf dist data/example/example-bots.json
 
 Build completed successfully!
-[36mvite v8.1.0 [32mbuilding client environment for production...[36m[39m
-[2Ktransforming...[38;5;147m[LARGE_BARREL_MODULES] [0m../../node_modules/@tabler/icons-react/dist/esm/tabler-icons-react.mjs has 6149 re-exports. Eagerly resolving every entry can significantly slow down the build. Consider using `@rolldown/plugin-transform-imports` to rewrite imports at the source level so the barrel file is never loaded.
- [38;5;240m │[0m 
- [38;5;240m │[0m [38;5;115mHelp[0m: See https://github.com/rolldown/plugins/tree/main/packages/transform-imports for usage.
-
-✓ 615 modules transformed.
+[36mvite v8.1.5 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 6985 modules transformed.
 rendering chunks...
 computing gzip size...
 dist/index.html                     0.54 kB │ gzip:   0.34 kB
-dist/assets/index-6_ijXM5t.css    236.02 kB │ gzip:  34.65 kB
-dist/assets/index-CKMy_rj_.js   1,140.14 kB │ gzip: 335.56 kB
+dist/assets/index-DtFkbI6i.css    236.16 kB │ gzip:  34.72 kB
+dist/assets/index-Z0CMzAum.js   1,147.02 kB │ gzip: 338.01 kB
 
-[32m✓ built in 2.41s[39m
 [33m[plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 1.59s[39m
