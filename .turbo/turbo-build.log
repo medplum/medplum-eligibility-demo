@@ -1,28 +1,26 @@
 
-> medplum-eligibility-demo@5.1.36 build
+> medplum-eligibility-demo@5.1.37 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@5.1.36 build:bots
+> medplum-eligibility-demo@5.1.37 build:bots
 > npm run clean && tsc && node --no-warnings esbuild-script.mjs && tsx src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@5.1.36 clean
+> medplum-eligibility-demo@5.1.37 clean
 > rimraf dist data/example/example-bots.json
 
 Build completed successfully!
-[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
-  - `__dirname` (vite.config.ts:9:27). Use `import.meta.dirname` instead
-Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
-[36mvite v8.2.1 [32mbuilding client environment for production...[36m[39m
-[2Ktransforming...✓ 7054 modules transformed.
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 7054 modules transformed.
 rendering chunks...
 computing gzip size...
 dist/index.html                     0.54 kB │ gzip:   0.33 kB
 dist/assets/index-a8eoty9p.css    240.64 kB │ gzip:  35.22 kB
-dist/assets/index-CrzwgvAa.js   1,052.84 kB │ gzip: 308.15 kB
+dist/assets/index-B4d-cL9I.js   1,052.86 kB │ gzip: 308.14 kB
 
-[32m✓ built in 1.44s[39m
+[32m✓ built in 2.57s[39m
 [33m[plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
