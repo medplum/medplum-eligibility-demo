@@ -1,13 +1,13 @@
 
-> medplum-eligibility-demo@5.1.40 build
+> medplum-eligibility-demo@5.1.41 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@5.1.40 build:bots
+> medplum-eligibility-demo@5.1.41 build:bots
 > npm run clean && tsc && node --no-warnings esbuild-script.mjs && tsx src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@5.1.40 clean
+> medplum-eligibility-demo@5.1.41 clean
 > rimraf dist data/example/example-bots.json
 
 Build completed successfully!
@@ -25,4 +25,4 @@ dist/assets/index-CItdVrjd.js   1,084.57 kB │ gzip: 317.54 kB
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 3.14s[39m
+[32m✓ built in 2.27s[39m
