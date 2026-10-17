@@ -1,13 +1,13 @@
 
-> medplum-eligibility-demo@5.2.5 build
+> medplum-eligibility-demo@5.2.6 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@5.2.5 build:bots
+> medplum-eligibility-demo@5.2.6 build:bots
 > npm run clean && tsc && node --no-warnings esbuild-script.mjs && tsx src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@5.2.5 clean
+> medplum-eligibility-demo@5.2.6 clean
 > rimraf dist data/example/example-bots.json
 
 Build completed successfully!
@@ -25,4 +25,4 @@ dist/assets/index-DDsf8RCH.js   1,099.02 kB │ gzip: 322.41 kB
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 3.03s[39m
+[32m✓ built in 3.21s[39m
