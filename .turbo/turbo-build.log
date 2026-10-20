@@ -1,13 +1,13 @@
 
-> medplum-eligibility-demo@5.2.6 build
+> medplum-eligibility-demo@5.2.7 build
 > npm run build:bots && tsc && vite build
 
 
-> medplum-eligibility-demo@5.2.6 build:bots
+> medplum-eligibility-demo@5.2.7 build:bots
 > npm run clean && tsc && node --no-warnings esbuild-script.mjs && tsx src/scripts/deploy-bots.ts
 
 
-> medplum-eligibility-demo@5.2.6 clean
+> medplum-eligibility-demo@5.2.7 clean
 > rimraf dist data/example/example-bots.json
 
 Build completed successfully!
@@ -16,13 +16,13 @@ transforming...
 ✓ 7108 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                     0.54 kB │ gzip:   0.33 kB
-dist/assets/index-Bk8gb9eF.css    247.58 kB │ gzip:  36.13 kB
-dist/assets/index-DDsf8RCH.js   1,099.02 kB │ gzip: 322.41 kB
+dist/index.html                     0.54 kB │ gzip:   0.34 kB
+dist/assets/index-BCbjBc-F.css    248.07 kB │ gzip:  36.25 kB
+dist/assets/index-DuUcWJPK.js   1,099.47 kB │ gzip: 322.55 kB
 
 [33m[plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
-[32m✓ built in 3.21s[39m
+[32m✓ built in 5.65s[39m
